@@ -1,0 +1,51 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.space {
+    padding: 15px 0;
+    height: 0;
+}
+
+.checkbox-input .label, .radiobutton-input .label,
+.checkbox, .radio {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.checkbox:before, .radio:before {
+    background-color: white;
+}
+
+.checkbox-input.disabled .checkbox,
+.radiobutton-input.disabled .radio,
+.checkbox-input.disabled .label,
+.radiobutton-input.disabled .label {
+    color: rgba(255, 255, 255, 0.40) !important;
+}
+
+.btn.raised.disabled, .btn.raised.disabled:focus,
+.btn.raised[disabled], .btn.raised[disabled]:focus,
+.btn.raised:disabled, .btn.raised:disabled:focus {
+    color: rgba(255, 255, 255, 0.30);
+}
+
+#tree-jsonfile {
+    display: none;
+}
+
+#tree .node {
+    margin-left: 48px;
+    border-left: solid 1px rgba(255, 255, 255, 0.7);
+}
+
+#tree > .node {
+    margin-left: 0;
+    border: none;
+}
